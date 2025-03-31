@@ -1,0 +1,218 @@
+/* styles/Welcome.css */
+
+.welcome-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #F3F3E9;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Welcome Heading */
+.welcome-box h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+/* QUIZ and Mania styled individually */
+.welcome-box h2 span {
+  color: #b63c6c; /* 'QUIZ' text */
+  font-weight: 500;
+}
+
+.welcome-box h2 strong {
+  color: #b63c6c; /* 'Mania' text */
+  font-weight: 700;
+}
+
+/* Rules Box */
+.rules-box {
+  padding: 10px 8px;
+  border-radius: 10px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #333;
+ 
+}
+
+/* "Quiz rules" link inside the box */
+.rules-box a {
+  display: inline-block;
+  margin-top: 2px;
+  color: #b63c6c;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 14px;
+  text-align: left;
+}
+
+
+.input-group {
+  margin-bottom: 24px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+  text-align: left;
+
+}
+
+.input-group input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+  background-color: #F3F3E9;
+
+ 
+}
+
+.input-group input[type="text"]:focus {
+  border-color: #b63c6c;
+  outline: none;
+}
+
+.topics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+    background-color: #F3F3E9;
+
+}
+
+.topic-option input[type="radio"] {
+  display: none;
+}
+
+.topic-option label {
+  display: block;
+  padding: 12px 16px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #333;
+ 
+}
+
+.topic-option input[type="radio"]:checked + label {
+  border: 2px solid #b63c6c;
+  outline: 3px solid #fbe3ec;
+  font-weight: 600;
+  box-shadow: 0 0 4px rgba(182, 60, 108, 0.2);
+}
+
+
+.topic-option label:hover {
+  background-color: #f0f0f0;
+}
+
+.start-btn {
+  margin-top: 24px;
+  padding: 12px 28px;
+  background-color: #b63c6c;
+  
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color:white;
+
+}
+
+.start-btn:hover {
+  background-color: #9f2e5b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .welcome-container {
+    padding: 24px;
+  }
+
+  .topics {
+    grid-template-columns: 1fr;
+  }
+
+  .start-btn {
+    width: 100%;
+  }
+}
+
+/* Base styles apply to desktop and large tablets */
+
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 32px 20px;
+    max-width: 90%;
+  }
+
+  .form-group input[type="text"] {
+    font-size: 14px;
+  }
+
+  .quiz-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .option-label {
+    width: 100%;
+  }
+
+  .start-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* Small devices (phones, 480px and below) */
+@media (max-width: 480px) {
+  .welcome-container {
+    padding: 24px 16px;
+  }
+
+  .welcome-container h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .rules-box {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .rules-link {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 13px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input[type="text"] {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .start-btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}

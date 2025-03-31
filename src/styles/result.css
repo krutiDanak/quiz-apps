@@ -1,0 +1,235 @@
+/* === Container === */
+.result-container {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 40px;
+  border: 1.5px solid #d1d1d1;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Header (top bar) === */
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+.logo span {
+  color: #b63c6c;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-badge {
+  width: 36px;
+  height: 36px;
+  background-color: #2d2547;
+  color: white;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* === Icon === */
+.result-icon {
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* === Heading & Text === */
+.result-heading {
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: #1e1e1e;
+  margin-bottom: 6px;
+}
+
+.result-subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.score-label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.score-value {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #4caf50;
+}
+
+.score-message.large {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 10px;
+}
+
+/* === Summary Box === */
+.summary-box {
+  padding: 16px 20px;
+  margin: 24px auto 20px;
+  border-radius: 12px;
+  border: 1.5px solid #bfbfbf;
+  max-width: 320px;
+}
+
+.summary-box p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.summary-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.summary-stats .correct {
+  color: #4caf50;
+}
+
+.summary-stats .incorrect {
+  color: #e53935;
+}
+
+.summary-stats .unanswered {
+  color: #9e9e9e;
+}
+
+/* === Button === */
+.restart-btn {
+  padding: 10px 24px;
+  background: none;
+  border: 1.5px solid #b63c6c;
+  color: #b63c6c;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.restart-btn:hover {
+  background-color: #fce9f1;
+}
+
+/* === Mobile Optimization: max-width 480px === */
+@media (max-width: 480px) {
+  .result-container {
+    padding: 24px 16px;
+    max-width: 100%;
+  }
+
+  .result-header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .user-info {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .user-badge {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .user-name {
+    font-size: 13px;
+  }
+
+  .result-icon {
+    margin-bottom: 16px;
+  }
+
+  .icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .result-heading {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .result-subtext {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .score-label {
+    font-size: 13px;
+  }
+
+  .score-value {
+    font-size: 28px;
+  }
+
+  .score-message.large {
+    font-size: 17px;
+  }
+
+  .summary-box {
+    padding: 14px 16px;
+    max-width: 100%;
+  }
+
+  .summary-stats {
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+  }
+
+  .restart-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
